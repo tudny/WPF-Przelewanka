@@ -1,5 +1,7 @@
 # Przelewanka
 
+## Treść
+
 Masz dane n szklanek, ponumerowanych od 1 do n, o pojemnościach odpowiednio x1, x2, ..., xn.  Początkowo wszystkie szklanki są puste. Możesz wykonywać następujące czynności:
 
 nalać do wybranej szklanki do pełna wody z kranu, 
