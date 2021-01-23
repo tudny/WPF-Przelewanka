@@ -1,4 +1,3 @@
-
 module IntArrayMap = Map.Make( 
   struct
     type t = int array
@@ -8,20 +7,17 @@ module IntArrayMap = Map.Make(
 
 exception Found of int
 
-let przelewanka (cups : (int * int) array) : int =
-
-  let n = Array.length cups
+let przelewanka cups = 
+  let cups_nr = Array.length cups
   in
-
-  if n = 0 then 0 else
-
-  let rec nwd x y = 
-    if y = 0 then x
-    else nwd y (x mod y)
-  in
-
-  let nwd_array = Array.fold_left nwd 0
-  in
+  if cups_nr = 0 then 0 else
+  
+  let array_nwd = 
+    let rec nwd x y = 
+      if y = 0 then x
+      else nwd y (x mod y)
+    in Array.fold_left nwd 0
+  in 
 
   let array_split arr =
     let len = Array.length arr in
@@ -29,42 +25,29 @@ let przelewanka (cups : (int * int) array) : int =
     (part fst, part snd)
   in
 
-  let (heights, after) = array_split cups
+  let heights, result = array_split cups
   in
 
-  let start n = Array.make n 0
-  in
-
-  let d = nwd_array heights
-  in
-
+  let d = array_nwd heights in
   if d = 0 then 0 else
-
-  let can_be_done =
-    Array.for_all (fun h -> h mod d = 0) after
-    &&
-    Array.exists (fun (h, o) -> h = o || o = 0) cups
-  in
-
-  let q = Queue.create ()
-  in
-
-  let vis = ref IntArrayMap.empty
-  in
+  
+  let can_be_done = 
+    Array.for_all (fun h -> h mod d = 0) result &&
+    Array.exists (fun (h, e) -> h = e || e = 0) cups
+  in 
 
   let until_full x state = 
     let state = Array.copy state in
     state.(x) <- heights.(x);
     state
   in
-
+  
   let until_empty x state = 
     let state = Array.copy state in
     state.(x) <- 0;
     state
   in
 
-  (* Przelej x do y *)
   let pour state_def y x =
     let state = Array.copy state_def in 
     let left = heights.(y) - state.(y) in 
@@ -78,33 +61,37 @@ let przelewanka (cups : (int * int) array) : int =
     state
   in
 
-  Queue.add (start n) q;
-
-  vis := IntArrayMap.add (start n) 0 !vis;
+  let q = Queue.create () in
+  let vis = ref IntArrayMap.empty in
+  let start_state = Array.make cups_nr 0 in
+  Queue.add start_state q;
+  vis := IntArrayMap.add (start_state) 0 !vis;
 
   try 
-    while Queue.is_empty q |> not && can_be_done do
-      let front = Queue.take q in
-      let dis = IntArrayMap.find front !vis in
-      if front = after then raise (Found dis);
+    while can_be_done && not (Queue.is_empty q) do 
+      let front = Queue.take q in 
+      let dis = IntArrayMap.find front !vis in 
+      if front = result then raise (Found dis);
+      
       let process new_way = 
-        if IntArrayMap.mem new_way !vis |> not then begin
+        if not (IntArrayMap.mem new_way !vis) then begin
           vis := IntArrayMap.add new_way (dis + 1) !vis;
           Queue.add new_way q
-        end
-      in
-      Array.iteri (fun ele va ->
-          if va <> 0 then process (until_empty ele front);
-          if va <> heights.(ele) then process (until_full ele front); 
-          Array.iteri (fun ele2 _ -> 
-              if ele <> ele2 && heights.(ele2) <> 0 && heights.(ele) <> va then begin
+        end in 
+      
+      Array.iteri ( fun ele height -> 
+          if height <> 0 then process (until_empty ele front);
+          if height <> heights.(ele) then process (until_full ele front);
+
+          Array.iteri ( fun ele2 _ ->
+              if ele <> ele2 && heights.(ele2) <> 0 &&
+               heights.(ele) <> height then begin
                 process (pour front ele ele2)
-              end 
-            ) front;
+              end
+            ) front
         ) front
     done;
-    raise (Found (-1))
+    -1
   with
   | Found x -> x
-
 

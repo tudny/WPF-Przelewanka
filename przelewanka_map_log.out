@@ -1,0 +1,191 @@
+Kompiluję Przelewankę
+Przetwarzam: GH_adasiek96.ml
+(B[mPrzetwarzam: GH_aswietlik.ml
+(B[mPrzetwarzam: GH_sebastianjaszczur.ml
+[36mTest  1056: [0m[32mOK!  (czas:   0.06s)[0m
+[36mTest  1077: [0m[32mOK!  (czas:   0.05s)[0m
+[36mTest  1300: [0m[32mOK!  (czas:   1.38s)[0m
+[36mTest  1301: [0m[32mOK!  (czas:   0.43s)[0m
+[36mTest  1306: [0m[32mOK!  (czas:   1.17s)[0m
+[36mTest  1313: [0m[32mOK!  (czas:   3.09s)[0m
+[36mTest  1314: [0m[32mOK!  (czas:   0.49s)[0m
+[36mTest  1319: [0m[32mOK!  (czas:   2.17s)[0m
+[36mTest  1322: [0m[32mOK!  (czas:   2.66s)[0m
+[36mTest  1334: [0m[32mOK!  (czas:   3.07s)[0m
+[36mTest  1338: [0m[32mOK!  (czas:   0.10s)[0m
+[36mTest  1342: [0m[32mOK!  (czas:   0.95s)[0m
+[36mTest  1353: [0m[32mOK!  (czas:   0.79s)[0m
+[36mTest  1355: [0m[32mOK!  (czas:   0.44s)[0m
+[36mTest  1357: [0m[32mOK!  (czas:   0.14s)[0m
+[36mTest  1365: [0m[32mOK!  (czas:   5.89s)[0m
+[36mTest  1366: [0m[32mOK!  (czas:   1.46s)[0m
+[36mTest  1368: [0m[32mOK!  (czas:   0.05s)[0m
+[36mTest  1371: [0m[32mOK!  (czas:   1.66s)[0m
+[36mTest  1376: [0m[32mOK!  (czas:   2.83s)[0m
+[36mTest  1380: [0m[32mOK!  (czas:   0.09s)[0m
+[36mTest  1389: [0m[32mOK!  (czas:   0.05s)[0m
+[36mTest  1392: [0m[32mOK!  (czas:   0.12s)[0m
+[36mTest  1397: [0m[32mOK!  (czas:   0.41s)[0m
+[36mTest  1401: [0m[32mOK!  (czas:   0.38s)[0m
+[36mTest  1404: [0m[32mOK!  (czas:   0.13s)[0m
+[36mTest  1408: [0m[32mOK!  (czas:   0.18s)[0m
+[36mTest  1412: [0m[32mOK!  (czas:   0.92s)[0m
+[36mTest  1417: [0m[32mOK!  (czas:   0.08s)[0m
+[36mTest  1419: [0m[32mOK!  (czas:   0.10s)[0m
+[36mTest  1423: [0m[32mOK!  (czas:   0.80s)[0m
+[36mTest  1433: [0m[32mOK!  (czas:   0.22s)[0m
+[36mTest  1435: [0m[32mOK!  (czas:   1.94s)[0m
+[36mTest  1440: [0m[32mOK!  (czas:   0.50s)[0m
+[36mTest  1445: [0m[32mOK!  (czas:   0.07s)[0m
+[36mTest  1446: [0m[32mOK!  (czas:   0.29s)[0m
+[36mTest  1447: [0m[32mOK!  (czas:   0.31s)[0m
+[36mTest  1450: [0m[32mOK!  (czas:   0.12s)[0m
+[36mTest  1451: [0m[32mOK!  (czas:   1.28s)[0m
+[36mTest  1452: [0m[32mOK!  (czas:   0.78s)[0m
+[36mTest  1453: [0m[32mOK!  (czas:   3.21s)[0m
+[36mTest  1455: [0m[32mOK!  (czas:   1.15s)[0m
+[36mTest  1457: [0m[32mOK!  (czas:   0.07s)[0m
+[36mTest  1459: [0m[32mOK!  (czas:   0.09s)[0m
+
+Testy OK
+(B[mPrzetwarzam: a_0FF|(|4|__73572.ml
+Test 101: ... 0.000002 OK
+Test 102: ... 0.000002 OK
+Test 103: ... 0.000001 OK
+Test 104: ... 0.000000 OK
+Test 105: ... 0.000001 OK
+Test 106: ... 0.000001 OK
+Test 201: ... 0.000004 OK
+Test 202: ... 0.067979 OK
+Test 301: ... 0.000009 OK
+Test 302: ... 0.000218 OK
+Test 303: ... 0.000270 OK
+Test 304: ... 0.000780 OK
+Test 305: ... 0.000642 OK
+Test 307: ... 0.000612 OK
+Test 308: ... 0.002275 OK
+Test 309: ... 0.010542 OK
+Test 310: ... 0.000496 OK
+Test 311: ... 0.000243 OK
+Test 312: ... 0.000122 OK
+Test 313: ... 0.000100 OK
+Test 314: ... 0.014565 OK
+Test 315: ... 0.277592 OK
+Test 316: ... 1.363830 OK
+Test 317: ... 5.874835 OK
+Test 318: ... 6.061706 OK
+Test 401: ... 0.174284 OK
+Test 402: ... 0.208949 OK
+Test 403: ... 0.008612 OK
+Test 404: ... 1.557852 OK
+Test 405: ... 0.002221 OK
+Test 421: ... 0.000042 OK
+Zużycie pamięci: 3343.0 10.0 10.0
+Test 422: ... 0.000781 OK
+Zużycie pamięci: 46171.0 10.0 10.0
+Test 423: ... 0.009807 OK
+Zużycie pamięci: 566497.0 39169.0 39169.0
+Test 424: ... 0.133122 OK
+Zużycie pamięci: 6670774.0 467322.0 467322.0
+Test 425: ... 1.602332 OK
+Zużycie pamięci: 76878871.0 4912107.0 4912107.0
+Test 426: ... 19.022804 OK
+Zużycie pamięci: 869852262.0 49718885.0 49718885.0
+Test 451: ... 0.000006 OK
+Zużycie pamięci: 207.0 12.0 12.0
+Test 452: ... 0.000006 OK
+Zużycie pamięci: 352.0 13.0 13.0
+Test 453: ... 0.000011 OK
+Zużycie pamięci: 807.0 14.0 14.0
+Test 454: ... 0.000029 OK
+Zużycie pamięci: 2130.0 15.0 15.0
+Test 455: ... 0.000181 OK
+Zużycie pamięci: 5915.0 16.0 16.0
+Test 456: ... 0.000564 OK
+Zużycie pamięci: 16418.0 17.0 17.0
+Test 457: ... 0.001094 OK
+Zużycie pamięci: 44553.0 18.0 18.0
+Test 458: ... 0.003110 OK
+Zużycie pamięci: 118744.0 19.0 19.0
+Test 459: ... 0.007798 OK
+Zużycie pamięci: 309225.0 7976.0 7976.0
+Test 460: ... 0.023441 OK
+Zużycie pamięci: 793905.0 22941.0 22941.0
+Test 461: ... 0.062338 OK
+Zużycie pamięci: 2000861.0 51538.0 51538.0
+Test 462: ... 0.175574 OK
+Zużycie pamięci: 4978463.0 111916.0 111916.0
+Test 463: ... 0.452839 OK
+Zużycie pamięci: 12210343.0 241227.0 241227.0
+Test 464: ... 1.136075 OK
+Zużycie pamięci: 29617422.0 503970.0 503970.0
+Test 465: ... 2.866331 OK
+Zużycie pamięci: 71027686.0 1051658.0 1051658.0
+Testy bonusowe
+Test 501: ... 0.000003 OK
+Test 502: ... 0.000055 OK
+Test 601: ... 0.000001 OK
+Test 602: ... 0.000066 OK
+
+Testy OK!
+(B[mPrzetwarzam: b_mgienieczko.ml
+[33m
+=============================================================================
+Mateusz Gienieczko's tests to Przelewanka task.
+(I learnt how to use colors, now nothing's the same.)
+The tests' author is me, unless explicitly stated otherwise.
+=============================================================================
+[34mBeginning simple, small tests
+[34mTest #1: [31m[32mOK in 0.00 s
+[34mTest #2: [31m[32mOK in 0.00 s
+[34mTest #3: [31m[32mOK in 0.00 s
+[34mTest #4: [31m[32mOK in 0.00 s
+[34mTest #5: [31m[32mOK in 0.00 s
+[34mTest #6: [31m[32mOK in 0.02 s
+[34mTest #7: [31m[32mOK in 0.00 s
+[34mTest #8: [31m[32mOK in 0.00 s
+[34mTest #9: [31m[32mOK in 0.00 s
+[34mTest #10: [31m[32mOK in 0.00 s
+[34mTest #11: [31m[32mOK in 0.00 s
+[34mTest #12: [31m[32mOK in 0.00 s
+[34mTest #13: [31m[32mOK in 0.00 s
+[34mTest #14: [31m[32mOK in 0.07 s
+[34mTest #15: [31m[32mOK in 0.02 s
+[34mTest #16: [31m[32mOK in 0.00 s
+[33m=============================================================================
+These may take a little longer, but not more than 10 - 30 seconds each
+=============================================================================
+[34mTest #17: [31m[32mOK in 0.79 s
+[34mTest #18: [31m[32mOK in 4.70 s
+[34mTest #19: [31m[32mOK in 5.49 s
+[34mTest #20: [31m[32mOK in 23.51 s
+[34mTest #21: [31m[32mOK in 14.59 s
+[34mTest #22: [31m[32mOK in 0.00 s
+[34mTest #23: [31m[32mOK in 8.67 s
+[34mTest #24: [31m[32mOK in 18.07 s
+[34mTest #25: [31m[32mOK in 14.82 s
+[34mTest #26: [31m[32mOK in 9.29 s
+[34mTest #27: [31m[32mOK in 9.25 s
+[34mTest #28: [31m[32mOK in 22.23 s
+[34mTest #29: [31m[32mOK in 15.05 s
+[34mTest #30: [31m[32mOK in 4.74 s
+[34mTest #31: [31m[32mOK in 36.79 s
+[34mTest #32: [31m[32mOK in 61.48 s
+[33m=============================================================================
+Following tests are from III Polish Olympiad inInformatics, task "Mokra robota".The task's author is Piotr Chrzastowski-Wachtel.
+=============================================================================
+[34mTest #33: [31m[32mOK in 0.00 s
+[34mTest #34: [31m[32mOK in 0.00 s
+[34mTest #35: [31m[32mOK in 0.00 s
+[34mTest #36: [31m[32mOK in 0.00 s
+[34mTest #37: [31m[32mOK in 0.00 s
+[34mTest #38: [31m[32mOK in 0.00 s
+[34mTest #39: [31m[32mOK in 0.00 s
+[34mTest #40: [31m[32mOK in 0.00 s
+[34mTest #41: [31m[32mOK in 0.00 s
+[34mTest #42: [31m[32mOK in 0.02 s
+[34mTest #43: [31m[32mOK in 0.36 s
+[33m=============================================================================
+All tests [32mOK!
+[33m=============================================================================
+(B[m
