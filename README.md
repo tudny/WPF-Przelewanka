@@ -12,3 +12,6 @@ Twoim celem jest uzyskanie takiej sytuacji, że w każdej szklance jest określo
 Napisz procedurę przelewanka : (int * int) array → int, która mając daną tablicę par liczb [|(x1, y1); (x2, y2); ...; (xn, yn)|] wyznaczy minimalną liczbę czynności potrzebnych do uzyskania opisanej przez nie sytuacji. Jeżeli jej uzyskanie nie jest możliwe, to poprawnym wynikiem jest -1. 
 
 Możesz założyć, że 0 ≤ n, oraz 0 ≤ yi ≤ xi dla i = 1, 2, ..., n.
+
+## Rozwiązanie
+WIP
