@@ -78,7 +78,6 @@ let przelewanka (kubki : (int * int) array) : int =
     while Queue.is_empty q |> not && can_be_done do
       let front = Queue.take q in
       let dis = Hashtbl.find vis front in
-      flush stdout;
       if front = after then raise (Found dis);
       let process new_way = 
         if Hashtbl.mem vis new_way |> not then begin
