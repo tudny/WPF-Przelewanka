@@ -1,15 +1,7 @@
 (* ************************** *)
 (*        Przelewanka         *)
 (* Autor: Aleksander Tudruj   *)
-(* Review:                    *)
-
-(* Mapa pozwalająca sprawdzać, czy odwiedziliśmy dany stan kubków. *)
-module IntArrayMap = Map.Make(
-  struct
-    type t = int array
-    let compare = compare
-  end
-);;
+(* Review: Mikołaj Piróg      *)
 
 (* Wyjątek podnoszony w razie znalezienia wyniku. *)
 (* Skraca czas wykonania programu. *)
@@ -48,6 +40,8 @@ let przelewanka cups =
     Array.exists (fun (h, e) -> h = e || e = 0) cups
   in
 
+  if not (can_be_done) then -1 else
+
   (* Symulacja polegająca na dolaniu wody do pełna do kubka [x] *)
   let until_full x state =
     let state = Array.copy state in
@@ -78,7 +72,8 @@ let przelewanka cups =
 
   (* Kolejka niczym z algorytmu BFS; tak samo mapa odwiedzonych wierzchołków *)
   let q = Queue.create () in
-  let vis = ref IntArrayMap.empty in
+  (* O dziwo to magiczne ustawienie Hashtbl daje najlepsze czasy *)
+  let vis = Hashtbl.create (cups_nr * 202_020) ~random:true in
   let start_state = Array.make cups_nr 0 in
 
   (* Rozpatrując nową drogę w przelewaniu wody, sprawdzam czy nie osiągnąłem *)
@@ -87,8 +82,8 @@ let przelewanka cups =
   (* do kolejki.                                                             *)
   let process new_way dis =
     if new_way = result then raise (Found dis);
-    if not (IntArrayMap.mem new_way !vis) then begin
-      vis := IntArrayMap.add new_way dis !vis;
+    if not (Hashtbl.mem vis new_way) then begin
+      Hashtbl.add vis new_way dis;
       Queue.add new_way q
     end
   in
@@ -96,9 +91,9 @@ let przelewanka cups =
   try
     process start_state (0);
 
-    while can_be_done && not (Queue.is_empty q) do
+    while not (Queue.is_empty q) do
       let front = Queue.take q in
-      let dis = IntArrayMap.find front !vis in
+      let dis = Hashtbl.find vis front in
 
       (* Sprawdzam wszystkie możliwości.                       *)
       (* Nie rozpatruję tych, które nie mają logicznego sensu. *)
